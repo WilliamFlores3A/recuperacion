@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aplicación CRUD | SSR</title>
+    <style>
+        div#root {
+            width: 900px;
+            margin: 50px auto;
+        }
+        
+        footer p {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            margin: auto;
+            background-color: #a4c5f0;
+            font-size: 20px;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+     
+        table tr th,
+        table tr td {
+            text-align: left;
+            padding: 1rem;
+        }
+
+        table tr th {
+           
+            border-bottom: solid 2px #494cdf;
+            position: sticky;
+            top: 0;
+        }
+
+        table tr td {
+            border: solid 1px #bed5f3;
+            border-left: 0;
+            border-right: 0;
+        }
+        .x1{
+            color: black;
+            font-size: 40px;
+            margin-right: 34px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a class="x1" href="/"> Tabla de cursos</a></li>
+                
+                <a class="x1" href="/crear">Crear Curso</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="root">    
+
+<h1>Todas los cursos</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Índice</th>
+            <th>Nombre</th>
+            <th>Ciudad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each verificaciones}}
+        <tr>
+            <td>{{@key}}</td>
+            <td>{{Aprobado}}</td>
+            <td>{{Curso}}</td>
+            <td>
+                <a href="/editar/{{_id}}">Editar</a>
+                <a href="/eliminar/{{_id}}">Eliminar</a>
+            </td>
+        </tr>    
+    {{/each}}
+    </tbody>
+</table>   
+

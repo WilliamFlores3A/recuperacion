@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aplicación CRUD | SSR</title>
+    <style>
+        
+        form {
+            font-size: 30px;    
+        }
+        .x1{
+            color: black;
+            font-size: 40px;
+            margin-right: 34px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a class="x1" href="/"> Tabla de cursos</a></li>
+                
+                <a class="x1" href="/crear">Crear Curso</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="root">    
+<h1>Crear Curso</h1>
+<form method="POST">
+    <label for="curso">Curso</label>
+    <input type="text" name="curso" id="curso" required/>
+
+    <label for="aprobado">Aprobado</label>
+    <input type="text" name="aprobado" id="aprobado" required/>
+
+    <label for="recuperacion">Recuperacion</label>
+    <input type="number" name="recuperacion" id="recuperacion" required/>
+
+    <label for="reprobado">Reprobado</label>
+    <input type="number" name="reprobado" id="reprobado" required/>
+
+    <label for="tutorias">Tutorias</label>
+    <input type="number" name="tutorias" id="tutorias" required/>
+
+    <input type="submit" value="Crear verificacion"/>
+</form>
+

@@ -1,0 +1,36 @@
+{
+  "name": "app-ssr",
+  "version": "1.0.0",
+  "description": "Proyecto del sexto semeste en AWII",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Cristhianbh98/proyecto-web-6s.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cristhianbh98/proyecto-web-6s/issues"
+  },
+  "homepage": "https://github.com/Cristhianbh98/proyecto-web-6s/blob/master/README.md",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.6",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "nodemon": "^2.0.12"
+  }
+}
